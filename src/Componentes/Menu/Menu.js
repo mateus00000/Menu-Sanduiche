@@ -1,5 +1,5 @@
-import React, {useState} from React;
-import './Menu.css'
+import React, {useState} from 'react';
+import './menu.css';
 const Menu = () => {
 
     const [burguer_class, setBurguerClass] = useState("burguer-bar unclicked")
@@ -9,11 +9,11 @@ const Menu = () => {
     const updateMenu = () =>{
         if(!isMenuClicked){
             setBurguerClass("burguer-bar clicked")
-            setMenuClass("menu visivel")
+            setMenuClass("menu visible")
         }
         else{
             setBurguerClass("burguer-bar unclicked")
-            setMenuClass("menu oculto")
+            setMenuClass("menu hidden")
         }
         setIsMenuClicked(!isMenuClicked)
     }
