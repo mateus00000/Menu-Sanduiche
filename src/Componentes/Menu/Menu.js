@@ -4,6 +4,17 @@ const Menu = () => {
     const [burguer_class, setBurguerClass] = useState("burguer-bar unclicked")
     const [menu_class, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState("false")
+
+    const updateMenu = () =>{
+        if(!isMenuClicked){
+            setBurguerClass("burguer-bar clicked")
+            setMenuClass("menu visivel")
+        }
+        else{
+            setBurguerClass("burguer-bar unclicked")
+            setMenuClass("menu oculto")
+        }
+    }
     return(
         <div style={{width: '100%', height: '100vh'}}>
             <nav>
