@@ -15,14 +15,15 @@ const Menu = () => {
             setBurguerClass("burguer-bar unclicked")
             setMenuClass("menu oculto")
         }
+        setIsMenuClicked(!isMenuClicked)
     }
     return(
         <div style={{width: '100%', height: '100vh'}}>
             <nav>
-                <div className="burguer-menu">
-                    <div className={burguer_class} onClick={updateMenu}></div>
-                    <div className={burguer_class} onClick={updateMenu}></div>
-                    <div className={burguer_class} onClick={updateMenu}></div>
+                <div className="burguer-menu" onClick={updateMenu}>
+                    <div className={burguer_class}></div>
+                    <div className={burguer_class}></div>
+                    <div className={burguer_class}></div>
                 </div>
             </nav>
             <div className={menu_class}></div>
