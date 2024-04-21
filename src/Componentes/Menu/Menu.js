@@ -1,4 +1,5 @@
 import React, {useState} from React;
+import './Menu.css'
 const Menu = () => {
 
     const [burguer_class, setBurguerClass] = useState("burguer-bar unclicked")
