@@ -50,6 +50,7 @@ nav {
     gap: 30px;
     color: rgb(253, 253, 253);
     font-size: large;
+    font-weight: bold;
 }
 
 .burguer-bar.clicked:nth-child(1) {
