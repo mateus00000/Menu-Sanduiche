@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import './menu.css';
+import './Menu.css';
+import ItensMenu from '../ItensMenu/ItensMenu';
 const Menu = () => {
 
     const [burguer_class, setBurguerClass] = useState("burguer-bar unclicked")
@@ -26,7 +27,11 @@ const Menu = () => {
                     <div className={burguer_class}></div>
                 </div>
             </nav>
-            <div className={menu_class}></div>
+            <div className={menu_class}>
+            <ItensMenu nome="Home" />
+            <ItensMenu nome="Vendas" />
+            <ItensMenu nome="Administrativo" />
+            </div>
         </div>
     );
 }

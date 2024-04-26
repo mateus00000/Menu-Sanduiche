@@ -43,7 +43,13 @@ nav {
 }
 
 .visible{
-    display: inherit;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(253, 253, 253);
+    font-size: large;
 }
 
 .burguer-bar.clicked:nth-child(1) {
@@ -67,3 +73,4 @@ nav {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+
